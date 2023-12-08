@@ -12,7 +12,7 @@ fetch("https://northwind.vercel.app/api/products")
         <td><a id="href" href="./info.html?id=${element.id}">${element.name}</a></td>
         <td onclick="goTo()">${element.unitPrice}</a></td>
         <td>${element.unitsInStock}</a></td>
-        <td><button><a href="./add.html?id=${element.id}">Edit</a></button></td>
+        <td><button><a href="./update.html?id=${element.id}">Edit</a></button></td>
         <td><button>Delete</a></button>
         </td>
        </tr>`
