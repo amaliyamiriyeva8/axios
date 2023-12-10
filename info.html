@@ -6,34 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 20px;
+         }
+         body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+         }
         .inform{
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            gap: 15px;
-            height: 500px;
-            width: 600px;
+            gap: 35px;
+            height: 400px;
+            width: 500px;
+           border: 5px dashed darkslateblue ;
         }
         #info{
+           
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
         #btn{
+            background-color: darkslateblue;
             padding: 6px 30px;
         }
-        
+        a:-webkit-any-link {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        text-decoration: none;
+       }
+        h1{
+            padding-bottom: 40px;
+        }
+        #load{
+            width: 100px;
+            height: 80px;
+        }
+
     </style>
 </head>
 <body>
-    <section id="info">
-        <h1>About your description</h1>
-        <div class="inform"></div>
        
+    <section id="info">
     </section>
-    <script src="infor.js"></script>
+   
+ 
+    <script src="info.js"></script>
 </body>
 </html>

@@ -7,30 +7,54 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        gap: 20px;
     }
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  
 }
-
+#btn-1 , #btn-2{
+  width: 100%;
+  cursor: pointer;
+}
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
 input{
-    padding: 10px 0px;
+  width: 60%;
+    padding: 8px 0px;
+    padding-left: 10px;
+    font-size: 17px;
 }
-#href{
-            text-decoration: none;
-}
+a:-webkit-any-link {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        text-decoration: none;
+       }
+       .style{
+        width: 50px;
+        padding: 9px 0px;
+        position: fixed;
+        right: 20px;
+        cursor: pointer;
+       }
+       .div{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       }
 </style>
 </head>
 <body>
+  <div class="div">
 <input type="text">
-<h2>HTML Table</h2>
-
+<button class="style"><a href="./add.html?id=${element.id}" >+</a></button>
+</div>
 <table>
   <tr>
     <th>Id</th>
@@ -41,6 +65,7 @@ input{
     <th>Delete</th>
   </tr>
 </table>
+
 <script src="script.js"></script>
 </body>
 </html>
